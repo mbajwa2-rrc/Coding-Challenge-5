@@ -1,0 +1,31 @@
+{
+  "name": "coding-challenge-5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbajwa2-rrc/Coding-Challenge-5.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mbajwa2-rrc/Coding-Challenge-5/issues"
+  },
+  "homepage": "https://github.com/mbajwa2-rrc/Coding-Challenge-5#readme",
+  "dependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.9.1",
+    "express": "^5.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@redocly/cli": "^2.8.0",
+    "swagger-jsdoc": "^6.2.8"
+  }
+}
