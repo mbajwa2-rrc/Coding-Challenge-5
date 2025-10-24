@@ -7,7 +7,7 @@ const full = swaggerJsdoc(publicSwaggerOptions);
 const filteredPaths: Record<string, any> = {};
 
 for (const p of Object.keys(full.paths || {})) {
-  const item = full.paths[p];
+  const item = full.path[p];
   if (!item?.get) continue;
   const isPost = p.includes("/moderation/post/") && p.includes("{id}");
   const isUserProfile = p.includes("/moderation/user/") && p.includes("/profile");
