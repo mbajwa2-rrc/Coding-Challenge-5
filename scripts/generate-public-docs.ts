@@ -4,9 +4,8 @@ import path from "path";
 import { publicSwaggerOptions } from "../src/config/swaggerPublicOptions";
 
 const full = swaggerJsdoc(publicSwaggerOptions);
-
-// keep only GET /moderation/post/{id} and GET /moderation/user/{id}/profile
 const filteredPaths: Record<string, any> = {};
+
 for (const p of Object.keys(full.paths || {})) {
   const item = full.paths[p];
   if (!item?.get) continue;
@@ -25,4 +24,4 @@ const publicSpec = {
 const outDir = path.resolve("./docs");
 if (!fs.existsSync(outDir)) fs.mkdirSync(outDir);
 fs.writeFileSync(path.join(outDir, "openapi.json"), JSON.stringify(publicSpec, null, 2));
-console.log("✅ Wrote docs/openapi.json (public-only)");
+console.log("Wrote docs/openapi.json (public-only)");
