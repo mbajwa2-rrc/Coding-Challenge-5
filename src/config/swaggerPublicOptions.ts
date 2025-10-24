@@ -4,8 +4,7 @@ export const publicSwaggerOptions = {
     info: {
       title: "Content Moderation API - Public Documentation",
       version: "1.0.0",
-      description:
-        "Public endpoints for retrieving posts and user profiles. Internal moderation routes are excluded."
+      description: "Public endpoints for retrieving posts and user profiles. Internal moderation routes are excluded."
     },
     servers: [{ url: "http://localhost:3000/api/v1" }]
   },
